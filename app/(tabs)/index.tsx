@@ -1,4 +1,5 @@
 import { Text, StyleSheet, SafeAreaView } from 'react-native';
+import React from 'react';
 
 export default function HomeScreen() {
   return (
@@ -12,8 +13,10 @@ const styles = StyleSheet.create({
   largeText: {
     fontSize: 32,
     color: 'white',
+    textAlign: 'center',
+    fontFamily: 'sans-serif-thin',
   },
   mainView: {
-    backgroundColor: '#000080',
+    backgroundColor: 'black',
   },
 });
