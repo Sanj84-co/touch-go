@@ -9,6 +9,8 @@ export default function HomeScreen() {
 
   const [typeVis, setTypeVis] = useState(false);
 
+  const [moveVis, setMoveVis] = useState(false);
+
   return (
     <SafeAreaView style={styles.mainView}>
       <Modal visible={clickVis} animationType="fade" onRequestClose={() => setClickVis(false)} presentationStyle="pageSheet">
@@ -26,10 +28,16 @@ export default function HomeScreen() {
           <Text style={styles.largeText}>Type!</Text>
         </View>
       </Modal>
+      <Modal visible={moveVis} animationType="fade" onRequestClose={() => setMoveVis(false)} presentationStyle="pageSheet">
+        <View style={styles.container}>
+          <Text style={styles.largeText}>Move</Text>
+        </View>
+      </Modal>
         <Text style={styles.largeText}>Welcome to Touch and Go</Text>
         <Pressable onPress={() => setClickVis(true)} style={styles.buttons}>Click</Pressable>
         <Pressable onPress={() => setSwipeVis(true)} style={styles.buttons}>Swipe</Pressable>
         <Pressable onPress={() => setTypeVis(true)} style={styles.buttons}>Type</Pressable>
+        <Pressable onPress={() => setMoveVis(true)} style={styles.buttons}>Move</Pressable>
     </SafeAreaView>
   );
 }
