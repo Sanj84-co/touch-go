@@ -11,6 +11,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   largeText: {
     fontSize: 32,
+    color: 'white',
   },
   mainView: {
     backgroundColor: '#000080',
