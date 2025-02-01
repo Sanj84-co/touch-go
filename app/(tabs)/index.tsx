@@ -2,7 +2,7 @@ import { Text, StyleSheet } from 'react-native';
 
 export default function HomeScreen() {
   return (
-     <Text>Welcome to Touch and Go</Text>
+     <Text style={styles.largeText}>Welcome to Touch and Go</Text>
   );
 }
 
