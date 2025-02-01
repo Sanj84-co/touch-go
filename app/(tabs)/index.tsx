@@ -1,8 +1,8 @@
-import { StyleSheet, Text } from 'react-native';
+import { Text, StyleSheet } from 'react-native';
 
 export default function HomeScreen() {
   return (
-   <Text>Welcome to Touch and Go</Text>
+     <Text>Welcome to Touch and Go</Text>
   );
 }
 
